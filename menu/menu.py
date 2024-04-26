@@ -1,4 +1,4 @@
-from encryption import menu as encrypt
+from hashing import menu as encrypt
 from bruteforce import menu as bruteforce
 
 
