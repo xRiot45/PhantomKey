@@ -16,7 +16,7 @@ def main_menu():
     option = input("Enter a option: ")
 
     if option == "1":
-        encrypt.encrypt_menu()
+        encrypt.hashing_menu()
     elif option == "2":
         bruteforce.bruteforce_menu()
     elif option == "e":
