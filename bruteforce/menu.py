@@ -21,7 +21,7 @@ def bruteforce_menu():
     if option == "1":
         bruteforce.md2_bruteforce()
     elif option == "2":
-        print("MD4")
+        bruteforce.md4_bruteforce()
     elif option == "3":
         print("MD5")
     elif option == "4":
