@@ -3,7 +3,7 @@ from bruteforce import bruteforce
 
 
 def bruteforce_menu():
-    print("============ CHOOSE TYPE FOR BRUTE FORCE ============")
+    print("============ CHOOSE TYPE HASHING FOR BRUTE FORCE ============")
     print("[1] MD2")
     print("[2] MD4")
     print("[3] MD5")

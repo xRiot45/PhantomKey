@@ -1,15 +1,15 @@
 from encryption import menu as encrypt
-from decryption import menu as decrypt
+from bruteforce import menu as bruteforce
 
 
 def main_menu():
-    print("Welcome to PhantomKey, the encryption and decryption tool.")
+    print("Welcome to PhantomKey, the hashing and brute force tool.")
     print("Version      : 1.0")
     print("Developed by : xRiot")
     print("")
     print("============ CHOOSE A OPTION ============")
-    print("[1] Encrypt")
-    print("[2] Decrypt")
+    print("[1] Hashing")
+    print("[2] Brute Force")
     print("[e] Exit")
 
     print("")
@@ -18,7 +18,7 @@ def main_menu():
     if option == "1":
         encrypt.encrypt_menu()
     elif option == "2":
-        decrypt.decrypt_menu()
+        bruteforce.bruteforce_menu()
     elif option == "e":
         print("Goodbye!")
     else:
