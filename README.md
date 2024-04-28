@@ -23,3 +23,12 @@ There are 7 types of Hash Functions available in this tool, namely as follows:
 ## Requirements
 - Linux distribution
 - Python 3 or greater
+
+## Instalation
+```bash
+# Clone this tool
+git clone https://github.com/xRiot45/PhantomKey.git
+
+
+
+```
