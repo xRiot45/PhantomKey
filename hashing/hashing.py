@@ -192,7 +192,7 @@ def bcrypt_hashing():
     text = input("Enter the text to hashing: ")
     text_encode = text.encode("utf-8")
     salt = int(input("Enter the salt (an integer): "))
-    salt = bcrypt.gensalt(rounds=salt)
+    salt = bcrypt.gensalt(salt)
     print("Hashing.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -201,7 +201,6 @@ def bcrypt_hashing():
     hashed_text = bcrypt.hashpw(text_encode, salt)
     print(f"\nBcrypt =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
