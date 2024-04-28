@@ -24,7 +24,7 @@ There are 7 types of Hash Functions available in this tool, namely as follows:
 - Linux distribution
 - Python 3 or greater
 
-## Instalation
+## Installation
 ```bash
 # Step 1
 git clone https://github.com/xRiot45/PhantomKey.git
