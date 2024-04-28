@@ -10,7 +10,7 @@ def bruteforce_menu():
     print("[4] SHA-1")
     print("[5] SHA-256")
     print("[6] SHA-512")
-    print("[7] Bcrypt")
+    print("[7] Bcrypt ==>> | It takes a long time depending on the amount of salt |")
     print("[b] Back")
     print("[e] Exit")
 
@@ -31,7 +31,7 @@ def bruteforce_menu():
     elif option == "6":
         bruteforce.sha512_bruteforce()
     elif option == "7":
-        print("Bcrypt")
+        bruteforce.bcrypt_bruteforce()
     elif option == "b":
         menu.main_menu()
     elif option == "e":
