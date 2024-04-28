@@ -25,7 +25,7 @@ def bruteforce_menu():
     elif option == "3":
         bruteforce.md5_bruteforce()
     elif option == "4":
-        print("SHA-1")
+        bruteforce.sha1_brueforce()
     elif option == "5":
         print("SHA-256")
     elif option == "6":
