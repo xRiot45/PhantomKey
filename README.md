@@ -26,9 +26,24 @@ There are 7 types of Hash Functions available in this tool, namely as follows:
 
 ## Instalation
 ```bash
-# Clone this tool
+# 1
 git clone https://github.com/xRiot45/PhantomKey.git
 
+# 2
+cd PhantomKey
 
+# 3
+sudo su
 
+# 4
+python3 -m venv .venv
+
+# 5
+source .venv/bin/activate
+
+#6
+pip install -r requirements.txt
 ```
+
+## Usage
+Type ```python3 PhantomKey.py``` to run this tool
