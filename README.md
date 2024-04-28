@@ -6,6 +6,7 @@ PhantomKey is a tool that I have created using the Python programming language. 
 There are 7 types of Hash Functions available in this tool, namely as follows:
 
 [1] MD2
+
 [2] MD4
 
 [3] MD5
