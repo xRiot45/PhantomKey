@@ -1,8 +1,10 @@
+from banner import banner_color
 from menu import menu
 from bruteforce import bruteforce
 
 
 def bruteforce_menu():
+    print("")
     print("============ CHOOSE TYPE HASHING FOR BRUTE FORCE ============")
     print("[1] MD2")
     print("[2] MD4")
@@ -33,6 +35,7 @@ def bruteforce_menu():
     elif option == "7":
         bruteforce.bcrypt_bruteforce()
     elif option == "b":
+        print(banner_color)
         menu.main_menu()
     elif option == "e":
         print("Goodbye!")

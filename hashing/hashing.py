@@ -11,7 +11,7 @@ from Crypto.Hash import MD2, MD4
 def md2_hashing():
     print("============ MD2 ============")
 
-    text = input("Enter the text to hashing: ").strip()
+    text = input("Input the text for hashing: ").strip()
     text_encode = text.encode("utf-8")
     print("Hashing.", end="", flush=True)
     for i in range(5):
@@ -24,7 +24,6 @@ def md2_hashing():
 
     print(f"\nMD2 =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
@@ -33,14 +32,14 @@ def md2_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()
 
 
 # MD4 Hashing
 def md4_hashing():
     print("============ MD4 ============")
 
-    text = input("Enter the text to hashing: ")
+    text = input("Input the text for hashing: ")
     text_encode = text.encode("utf-8")
     print("Hashing.", end="", flush=True)
     for i in range(5):
@@ -53,7 +52,6 @@ def md4_hashing():
 
     print(f"\nMD4 =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
@@ -62,28 +60,26 @@ def md4_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()
 
 
 # MD5 Hashing
 def md5_hashing():
     print("============ MD5 ============")
 
-    text = input("Enter the text to hashing: ")
+    text = input("Input the text for hashing: ")
     text_encode = text.encode("utf-8")
     print("Hashing.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
         print(".", end="", flush=True)
 
-    print("")
     hash_object = hashlib.md5()
     hash_object.update(text_encode)
     hashed_text = hash_object.hexdigest()
 
     print(f"\nMD5 =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
@@ -92,28 +88,26 @@ def md5_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()
 
 
 # SHA-1 Hashing
 def sha1_hashing():
     print("============ SHA-1 ============")
 
-    text = input("Enter the text to hashing: ")
+    text = input("Input the text for hashing: ")
     text_encode = text.encode("utf-8")
     print("Hashing.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
         print(".", end="", flush=True)
 
-    print("")
     hash_object = hashlib.sha1()
     hash_object.update(text_encode)
     hashed_text = hash_object.hexdigest()
 
     print(f"\nSHA-1 =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
@@ -122,28 +116,26 @@ def sha1_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()
 
 
 # SHA-256 Hashing
 def sha256_hashing():
     print("============ SHA-256 ============")
 
-    text = input("Enter the text to hashing: ")
+    text = input("Input the text for hashing: ")
     text_encode = text.encode("utf-8")
     print("Hashing.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
         print(".", end="", flush=True)
 
-    print("")
     hash_object = hashlib.sha256()
     hash_object.update(text_encode)
     hashed_text = hash_object.hexdigest()
 
     print(f"\nSHA-256 =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
@@ -152,28 +144,26 @@ def sha256_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()
 
 
 # SHA-512 Hashing
 def sha512_hashing():
     print("============ SHA-512 ============")
 
-    text = input("Enter the text to hashing: ")
+    text = input("Input the text for hashing: ")
     text_encode = text.encode("utf-8")
     print("Hashing.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
         print(".", end="", flush=True)
 
-    print("")
     hash_object = hashlib.sha512()
     hash_object.update(text_encode)
     hashed_text = hash_object.hexdigest()
 
     print(f"\nSHA-512 =>> " + fade.greenblue(f" {hashed_text}"))
 
-    print("")
     option = get_user_option()
     print("")
 
@@ -182,16 +172,16 @@ def sha512_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()
 
 
 # Bcrypt Hashing
 def bcrypt_hashing():
     print("============ BCRYPT ============")
 
-    text = input("Enter the text to hashing: ")
+    text = input("Input the text for hashing: ")
     text_encode = text.encode("utf-8")
-    salt = int(input("Enter the salt (an integer): "))
+    salt = int(input("Input the salt (an integer): "))
     salt = bcrypt.gensalt(salt)
     print("Hashing.", end="", flush=True)
     for i in range(5):
@@ -209,4 +199,4 @@ def bcrypt_hashing():
     elif option == "n":
         menu.hashing_menu()
     else:
-        option = input("Do you want to hashing another text? [y/n]: ")
+        option = get_user_option()

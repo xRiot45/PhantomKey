@@ -1,6 +1,6 @@
 def get_user_option():
     while True:
-        option = input("Do you want to encrypt another text? [y/n]: ")
+        option = input("Do you want to input another password? [y/n]: ")
         if option in ("y", "n"):
             return option
         else:

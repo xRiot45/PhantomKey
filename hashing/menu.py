@@ -1,3 +1,4 @@
+from banner import banner_color
 from menu import menu
 from hashing import hashing
 
@@ -34,6 +35,7 @@ def hashing_menu():
     elif option == "7":
         hashing.bcrypt_hashing()
     elif option == "b":
+        print(banner_color)
         menu.main_menu()
     elif option == "e":
         print("Goodbye!")

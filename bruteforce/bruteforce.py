@@ -13,7 +13,7 @@ from Crypto.Hash import MD2, MD4, MD5
 def md2_bruteforce():
     print("============ MD2 ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -38,11 +38,11 @@ def md2_bruteforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -54,14 +54,14 @@ def md2_bruteforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
 
 
 # MD4 Bruteforce
 def md4_bruteforce():
     print("============ MD4 ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -86,11 +86,11 @@ def md4_bruteforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -102,14 +102,14 @@ def md4_bruteforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
 
 
 # MD5 Bruteforce
 def md5_bruteforce():
     print("============ MD5 ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -134,12 +134,12 @@ def md5_bruteforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
 
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -151,14 +151,14 @@ def md5_bruteforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
 
 
 # SHA-1 Bruteforce
 def sha1_brueforce():
     print("============ SHA-1 ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -183,12 +183,12 @@ def sha1_brueforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
 
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -200,14 +200,14 @@ def sha1_brueforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
 
 
 # SHA-256 Bruteforce
 def sha256_bruteforce():
     print("============ SHA-256 ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -232,12 +232,12 @@ def sha256_bruteforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
 
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -249,14 +249,14 @@ def sha256_bruteforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
 
 
 # SHA-512 Bruteforce
 def sha512_bruteforce():
     print("============ SHA-512 ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -281,12 +281,12 @@ def sha512_bruteforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
 
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -298,14 +298,14 @@ def sha512_bruteforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
 
 
 # Bcrypt Bruteforce
 def bcrypt_bruteforce():
     print("============ BCRYPT ============")
 
-    text = input("Enter the text to brute force: ").strip()
+    text = input("Input the text for brute force: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -329,12 +329,12 @@ def bcrypt_bruteforce():
 
         random_text = "".join(
             random.choices(
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?",
-                k=len(text),
+                "(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[]{};:'\",.<>/?)",
+                k=len("abcdefghij"),
             )
         )
 
-        print(f"\rAttack: {random_text}", end="", flush=True)
+        print(f"\rAttack: ({random_text})", end="", flush=True)
     if not found:
         print(fade.pinkred("\nAttack failed!"))
 
@@ -346,4 +346,4 @@ def bcrypt_bruteforce():
     elif option == "n":
         menu.bruteforce_menu()
     else:
-        option = input("Do you want to brute force another text? [y/n]: ")
+        option = get_user_option()
