@@ -18,3 +18,8 @@ There are 7 types of Hash Functions available in this tool, namely as follows:
 [6] SHA-512
 
 [7] Bcrypt
+
+
+## Requirements
+- Linux distribution
+- Python 3 or greater
