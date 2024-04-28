@@ -41,3 +41,6 @@ pip install -r requirements.txt
 
 ## Usage
 Type ```python3 PhantomKey.py``` to run this tool
+
+## Screenshot
+<p align="center"><img src="./assets/images-1.png" /></p>
