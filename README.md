@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ## Usage
 Type ```python3 PhantomKey.py``` to run this tool
 
-## Conclusion :
+## Conclusion
 Here are some suggestions that should be used to secure a password:
 
 - Password Length: Always make sure the password is at least 12 characters long. The longer it is, the harder it is to guess or hack.
