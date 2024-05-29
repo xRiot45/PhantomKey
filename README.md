@@ -1,3 +1,5 @@
+![alt text](/assets/logo.png)
+
 # PhantomKey
 
 PhantomKey is a tool that I have created using the Python programming language. This tool is designed for various security functions, including hashing data, brute forcing passwords, and identifying the type of hashing used in an encrypted password.
