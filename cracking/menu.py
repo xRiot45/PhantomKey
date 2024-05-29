@@ -1,11 +1,11 @@
 from banner import banner_color
 from menu import menu
-from bruteforce import bruteforce
+from cracking import cracking
 
 
-def bruteforce_menu():
+def cracking_menu():
     print("")
-    print("============ CHOOSE TYPE HASHING FOR BRUTE FORCE ============")
+    print("============ CHOOSE TYPE HASHING FOR CRACKING ============")
     print("[1] MD2")
     print("[2] MD4")
     print("[3] MD5")
@@ -21,19 +21,19 @@ def bruteforce_menu():
     print("")
 
     if option == "1":
-        bruteforce.md2_bruteforce()
+        cracking.md2_cracking()
     elif option == "2":
-        bruteforce.md4_bruteforce()
+        cracking.md4_cracking()
     elif option == "3":
-        bruteforce.md5_bruteforce()
+        cracking.md5_cracking()
     elif option == "4":
-        bruteforce.sha1_brueforce()
+        cracking.sha1_brueforce()
     elif option == "5":
-        bruteforce.sha256_bruteforce()
+        cracking.sha256_cracking()
     elif option == "6":
-        bruteforce.sha512_bruteforce()
+        cracking.sha512_cracking()
     elif option == "7":
-        bruteforce.bcrypt_bruteforce()
+        cracking.bcrypt_cracking()
     elif option == "b":
         print(banner_color)
         menu.main_menu()

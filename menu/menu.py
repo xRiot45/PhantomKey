@@ -1,17 +1,17 @@
 import fade
 from hashing import menu as encrypt
-from bruteforce import menu as bruteforce
+from cracking import menu as cracking
 from checktype import checktype
 
 
 def main_menu():
-    print("Welcome to PhantomKey, the hashing and brute force tool.")
+    print("Welcome to PhantomKey, the hashing and cracking password tool.")
     print("Version      : 1.0")
     print("Developed by : xRiot")
     print("")
     print("============ CHOOSE A OPTION ============")
     print("[1] Hashing")
-    print("[2] Brute Force")
+    print("[2] Cracking")
     print("[3] Check Type Hash")
     print("[e] Exit")
 
@@ -34,16 +34,18 @@ def main_menu():
     elif option == "2":
         banner = """
 
-██████  ██████  ██    ██ ████████ ███████     ███████  ██████  ██████   ██████ ███████ 
-██   ██ ██   ██ ██    ██    ██    ██          ██      ██    ██ ██   ██ ██      ██      
-██████  ██████  ██    ██    ██    █████       █████   ██    ██ ██████  ██      █████   
-██   ██ ██   ██ ██    ██    ██    ██          ██      ██    ██ ██   ██ ██      ██      
-██████  ██   ██  ██████     ██    ███████     ██       ██████  ██   ██  ██████ ███████ 
+
+ ██████ ██████   █████   ██████ ██   ██ ██ ███    ██  ██████  
+██      ██   ██ ██   ██ ██      ██  ██  ██ ████   ██ ██       
+██      ██████  ███████ ██      █████   ██ ██ ██  ██ ██   ███ 
+██      ██   ██ ██   ██ ██      ██  ██  ██ ██  ██ ██ ██    ██ 
+ ██████ ██   ██ ██   ██  ██████ ██   ██ ██ ██   ████  ██████  
+                            
 
         """
         banner_color = fade.pinkred(banner)
         print(banner_color)
-        bruteforce.bruteforce_menu()
+        cracking.cracking_menu()
     elif option == "3":
         banner = """
 

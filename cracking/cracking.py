@@ -4,16 +4,16 @@ import bcrypt
 import random
 import hashlib
 from wordlists import readwordlists
-from bruteforce import menu
+from cracking import menu
 from option.option import get_user_option
 from Crypto.Hash import MD2, MD4, MD5
 
 
-# MD2 Bruteforce
-def md2_bruteforce():
+# MD2 Cracking
+def md2_cracking():
     print("============ MD2 ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -50,18 +50,18 @@ def md2_bruteforce():
     print("")
 
     if option == "y":
-        md2_bruteforce()
+        md2_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+        menu.cracking_menu()
     else:
         option = get_user_option()
 
 
-# MD4 Bruteforce
-def md4_bruteforce():
+# MD4 Cracking
+def md4_cracking():
     print("============ MD4 ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -98,18 +98,18 @@ def md4_bruteforce():
     print("")
 
     if option == "y":
-        md4_bruteforce()
+        md4_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+        menu.cracking_menu()
     else:
         option = get_user_option()
 
 
-# MD5 Bruteforce
-def md5_bruteforce():
+# MD5 Cracking
+def md5_cracking():
     print("============ MD5 ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -147,18 +147,18 @@ def md5_bruteforce():
     print("")
 
     if option == "y":
-        md5_bruteforce()
+        md5_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+        menu.cracking_menu()
     else:
         option = get_user_option()
 
 
-# SHA-1 Bruteforce
-def sha1_brueforce():
+# SHA-1 Cracking
+def sha1_cracking():
     print("============ SHA-1 ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -196,18 +196,18 @@ def sha1_brueforce():
     print("")
 
     if option == "y":
-        sha1_brueforce()
+        sha1_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+        menu.cracking_menu()
     else:
         option = get_user_option()
 
 
-# SHA-256 Bruteforce
-def sha256_bruteforce():
+# SHA-256 Cracking
+def sha256_cracking():
     print("============ SHA-256 ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -245,18 +245,18 @@ def sha256_bruteforce():
     print("")
 
     if option == "y":
-        sha256_bruteforce()
+        sha256_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+       menu.cracking_menu()
     else:
         option = get_user_option()
 
 
-# SHA-512 Bruteforce
-def sha512_bruteforce():
+# SHA-512 Cracking
+def sha512_cracking():
     print("============ SHA-512 ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -294,18 +294,18 @@ def sha512_bruteforce():
     print("")
 
     if option == "y":
-        sha512_bruteforce()
+        sha512_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+        menu.cracking_menu()
     else:
         option = get_user_option()
 
 
-# Bcrypt Bruteforce
-def bcrypt_bruteforce():
+# Bcrypt Cracking
+def bcrypt_cracking():
     print("============ BCRYPT ============")
 
-    text = input("Input the text for brute force: ").strip()
+    text = input("Input the text for cracking: ").strip()
     print("Attack.", end="", flush=True)
     for i in range(5):
         time.sleep(1)
@@ -342,8 +342,8 @@ def bcrypt_bruteforce():
     print("")
 
     if option == "y":
-        bcrypt_bruteforce()
+        bcrypt_cracking()
     elif option == "n":
-        menu.bruteforce_menu()
+        menu.cracking_menu()
     else:
         option = get_user_option()
