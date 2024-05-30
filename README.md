@@ -2,7 +2,7 @@
 
 # PhantomKey
 
-PhantomKey is a tool that I have created using the Python programming language. This tool is designed for various security functions, including hashing data, brute forcing passwords, and identifying the type of hashing used in an encrypted password.
+PhantomKey is a tool that I have created using the Python programming language. This tool is designed for various security functions, including hashing password, cracking passwords, and identifying the type of hashing used in.
 
 
 There are 7 types of Hash Functions available in this tool, namely as follows:
@@ -57,15 +57,3 @@ Here are some suggestions that should be used to secure a password:
 - Don't Use Personal Information: Avoid using personal information such as your name, date of birth, pet names, or easy-to-guess words as part of your password.
 - Don't Use Common Words: Avoid common words or easy-to-guess phrases like "password", "123456", or "qwerty". Use unexpected combinations.
 - Update Regularly: Regularly change your passwords, especially for critical accounts like email or online banking.
-
-
-## Screenshot
-<p align="center"><img src="./assets/image-1.png" /></p>
-
-<p align="center"><img src="./assets/image-2.png" /></p>
-
-<p align="center"><img src="./assets/image-3.png" /></p>
-
-<p align="center"><img src="./assets/image-4.png" /></p>
-
-<p align="center"><img src="./assets/image-5.png" /></p>
